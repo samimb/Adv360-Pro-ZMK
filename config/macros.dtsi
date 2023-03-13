@@ -8,25 +8,25 @@
     compatible = "zmk,behavior-macro";
     label = "macro_dquotes";
     #binding-cells = <0>;
-    bindings = <&kp DQT>, <&kp DQT>, <&kp LEFT>;
+    bindings = <&kp LS(SE_N2)>, <&kp LS(SE_N2)>, <&kp LEFT>;
   };
   macro_braces: macro_braces {
     compatible = "zmk,behavior-macro";
     label = "macro_braces";
     #binding-cells = <0>;
-    bindings = <&kp LBRC>, <&kp RBRC>, <&kp LEFT>;
+    bindings = <&kp LS(RA(SE_N8))>, <&kp LS(RA(SE_N9))>, <&kp LEFT>;
   };
   macro_parens: macro_parens {
     compatible = "zmk,behavior-macro";
     label = "macro_parens";
     #binding-cells = <0>;
-    bindings = <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
+    bindings = <&kp LS(SE_N8)>, <&kp LS(SE_N9)>, <&kp LEFT>;
   };
   macro_brackets: macro_brackets {
     compatible = "zmk,behavior-macro";
     label = "macro_brackets";
     #binding-cells = <0>;
-    bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
+    bindings = <&kp RA(SE_N8)>, <&kp RA(SE_N9)>, <&kp LEFT>;
   };
   macro_kinesis: macro_kinesis {
     compatible = "zmk,behavior-macro";

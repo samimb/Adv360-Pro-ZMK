@@ -25,11 +25,11 @@
 
     default_layer {
       bindings = <
-        &kp ESC   &kp SE_N1 &kp SE_N2 &kp SE_N3 &kp SE_N4  &kp N5 &mo 1                                                                        &mo 3  &kp SE_N6 &kp SE_N7    &kp SE_N8    &kp SE_N9     &kp SE_N0    &kp SE_PLUS
-        &kp TAB   &kp Q     &kp W     &kp E     &kp R      &kp T  &none                                                                        &none  &kp Y     &kp U        &kp I        &kp O         &kp P        &kp SE_A_RING
-        &kp LCTRL &kp A     &kp S     &kp D     &kp F      &kp G  &none           &kp LCTRL &kp LALT &none &none &kp LGUI &kp RCTRL            &none  &kp H     &kp J        &kp K        &kp L         &kp SEMI     &kp SQT
-        &kp LSHFT &kp Z     &kp X     &kp C     &kp V      &kp B         &none    &none     &kp HOME &none &none &kp RALT &none     &none             &kp N     &kp M        &kp SE_COMMA &kp SE_DOT    &kp SE_MINUS &kp RSHFT
-        &mo 1     &kp GRAVE &kp CAPS  &kp LEFT  &kp RIGHT                &kp LGUI &kp LCTRL &kp BSPC             &kp TAB  &kp ENTER &kp SPACE                   &kp RCTRL    &kp LALT     &kp LS(SE_N7) &kp RBKT     &mo 2
+        &kp ESC   &kp SE_N1 &kp SE_N2 &kp SE_N3 &kp SE_N4  &kp N5 &mo 1                                                                        &mo 3    &kp SE_N6 &kp SE_N7    &kp SE_N8    &kp SE_N9     &kp SE_N0    &kp SE_PLUS
+        &kp TAB   &kp Q     &kp W     &kp E     &kp R      &kp T  &kp LEFT                                                                     &kp UP   &kp Y     &kp U        &kp I        &kp O         &kp P        &kp SE_A_RING
+        &kp LCTRL &kp A     &kp S     &kp D     &kp F      &kp G  &kp RIGHT       &kp LCTRL &kp LALT &none &none &kp LGUI &kp RCTRL            &kp DOWN &kp H     &kp J        &kp K        &kp L         &kp SEMI     &kp SQT
+        &kp LSHFT &kp Z     &kp X     &kp C     &kp V      &kp B         &none    &none     &kp HOME &none &none &kp RALT &none     &none               &kp N     &kp M        &kp SE_COMMA &kp SE_DOT    &kp SE_MINUS &kp RSHFT
+        &mo 1     &kp GRAVE &kp CAPS  &kp LEFT  &kp RIGHT                &kp LGUI &kp LCTRL &kp BSPC             &kp TAB  &kp ENTER &kp SPACE                     &kp RCTRL    &kp LALT     &kp LS(SE_N7) &kp RBKT     &mo 2
       >;
     };
     keypad {
@@ -43,11 +43,11 @@
     };
     fn {
       bindings = <
-        &kp F1 &kp F2   &kp F3       &kp F4 &kp F5 &kp F6 &tog 1                                                       &mo 3           &kp F7          &kp F8         &kp F9         &kp F10         &kp F11       &kp F12
-        &trans &trans   &kp C_VOL_UP &trans &trans &trans  &none                                                       &none           &trans          &kp C_BRI_UP   &trans         &kp UP          &kp UP        &kp SE_GRAVE
-        &trans &trans   &kp C_VOL_DN &trans &trans &trans  &none        &trans &trans &none &none &trans &trans        &none           &trans          &kp C_BRI_DN   &kp LEFT       &kp DOWN        &kp RIGHT     &kp BSLH
-        &trans &trans   &kp C_PP     &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none                  &macro_brackets &macro_parens  &macro_braces  &macro_dquotes  &macro_quotes &kp BSLH
-        &trans &kp PIPE &kp SE_PIPE  &trans &trans               &trans &trans &trans             &trans &trans &trans                                 &kp ASTERISK   &kp SE_DQT     &kp LG(X) &kp SE_MINUS  &trans
+        &kp F1 &kp F2   &kp F3       &kp F4 &kp F5 &kp F6 &tog 1                                                       &mo 3     &kp F7          &kp F8         &kp F9         &kp F10         &kp F11       &kp F12
+        &trans &trans   &kp C_VOL_UP &trans &trans &trans  &kp HOME                                                    &kp PG_UP &trans          &kp C_BRI_UP   &trans         &kp UP          &kp UP        &kp SE_GRAVE
+        &trans &trans   &kp C_VOL_DN &trans &trans &trans  &kp END      &trans &trans &none &none &trans &trans        &kp PG_DN &trans          &kp C_BRI_DN   &kp LEFT       &kp DOWN        &kp RIGHT     &kp BSLH
+        &trans &trans   &kp C_PP     &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none            &macro_brackets &macro_parens  &macro_braces  &macro_dquotes  &macro_quotes &kp trans
+        &trans &kp PIPE &kp SE_PIPE  &trans &trans               &trans &trans &trans             &trans &trans &trans                           &trans         &trans         &kp LG(X)       &kp SE_MINUS  &trans
       >;
     };
     mod {
